@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    margin: 1em 1em;
+    display: grid;
+    gap: 1em;
+    grid-column: 1fr;
+    align-items: center;
+}
+
+@media screen and (min-width: 640px) {
+    .container {
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+    grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+    grid-template-columns: repeat(4, 1fr);
+    }
+}
